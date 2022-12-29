@@ -24,9 +24,15 @@ g++ decub.cpp -o DECUB -O3 -std=c++11
 
 ```
 
-This step should have created an executable called `DECUB` in your working directory.
+This step should have created an executable called `DECUB` in your working directory. Otherwise you can download and use the already precompiled executable called `DECUB` found in this repository.
 
 ## How it works
+DECUB (disentangling the effects of codon usage bias) is a software that uses a Bayesian estimator that can explain the observed variability of codon composition in light of mutational and selection biases. It allows the disentangling of mutation, selection on amino acids and synonymous codons, as well as GC-bias gene conversion. 
+
+DECUB needs as input a count file and a mapping. A count file is a .txt file that contains all the counts of each codon for a specific species. It should be space-delimited and follow the sequence of codons
+
+| AAA 	| AAC 	| AAG 	| AAT 	| ACA 	| ACC 	| ... 	| TTC 	| TTG 	| TTT 	|
+|-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
 
 ## Control file
 
