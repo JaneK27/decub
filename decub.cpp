@@ -277,7 +277,7 @@ void mcmc (std::string ofile, std::vector<int>& counts, std::vector<int>& mappin
   myfile.open(ofile);
 
   // setting the header
-  myfile << "Gen llk ";
+  myfile << "Gen lnL ";
   for (int i=0; i<4; ++i){ myfile << "beta" << i << " "; }
   for (int i=0; i<K; ++i){ myfile << "phi" << i << " "; }
   myfile << "\n";
@@ -292,6 +292,8 @@ void mcmc (std::string ofile, std::vector<int>& counts, std::vector<int>& mappin
   for (int i=1; i<K; ++i){ 
     phi[i] += rtrian(0.5,1,1.5); 
   }
+
+  std::cout << "  DECUB has started! \n\n";
   
   // calculating the likelihood
   double llk = log_likelihood(beta, phi, counts, mapping); 
@@ -348,7 +350,7 @@ void mcmc (std::string ofile, std::vector<int>& counts, std::vector<int>& mappin
 
   // closing the file
   myfile.close();
-  std::cout << "  The analyses are finished! Check mcmc.txt file.\n\n";
+  std::cout << "  The analyses are finished! Check the " << ofile << " file.\n\n";
 }
 
 // reads a vector of counts
@@ -384,7 +386,7 @@ void read_counts( std::string cfile, std::vector<int>& counts ) {
     std::cout << "\n"; // adds empty line at the end of output
 
     // some check ups here...
-    std::cout << "  \n\n  Read counts successfully! \n\n";
+    std::cout << "  \n\n  Read counts successfully! \n\n\n  The analysis will start now.\n\n";
 
   } else {
     //prints if file not opened
@@ -424,7 +426,7 @@ void read_mapping( std::string mfile, std::vector<int>& mapping ) {
       }
       std::cout << "\n"; // adds empty line at the end of output
 
-      std::cout << "  \n\n  Read the mapping successfully! \n\n\n  The analyses will start now.\n\n";
+      std::cout << "  \n\n  Read the mapping successfully! \n\n";
     } else {
     std::cerr << " Mapping has less than 64 values. Please, specify the phi category for all codons. \n\n"; 
     exit(-1);
