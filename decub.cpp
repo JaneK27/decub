@@ -428,7 +428,7 @@ void read_mapping( std::string mfile, std::vector<int>& mapping ) {
 
       std::cout << "  \n\n  Read the mapping successfully! \n\n";
     } else {
-    std::cerr << " Mapping has less than 64 values. Please, specify the phi category for all codons. \n\n"; 
+    std::cerr << " Mapping has less than 64 values or some of the values are not integers (eg. NA). Please, specify the phi category for all codons. \n\n"; 
     exit(-1);
     }
   } else {
