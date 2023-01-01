@@ -6,7 +6,7 @@ DECUB (disentangling the effects of codon usage bias) is a bayesian estimator th
 
 0.1 (December 2022)
 
-## Downloading and compiling BESS
+## Downloading and compiling DECUB
 
 This GitHub repository consists of all the necessary files to compile and run DECUB. You can download these files manually or directly from the terminal by running this command: 
 
