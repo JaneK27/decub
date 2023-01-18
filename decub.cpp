@@ -1,4 +1,11 @@
-//g++ codon.cpp -o DECUB -O3 -std=c++11
+/* A Bayesian estimator  that quantifies the mutational and selective biases that drive codon preferences in animals.
+
+    author: Ioanna Kotari & Rui Borges
+    date: 24.12.2022
+    contact: ioanna.kotari@hotmail.com */
+
+// Compile command:
+// g++ decub.cpp -o DECUB -O3 -std=c++11 
 
 #include <iostream>
 #include <vector>
@@ -8,9 +15,6 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
-
-// g++ decub.cpp -o DECUB -O3 -std=c++11 
-
 
 // declaring the functions
 void   ReadControlFile(const std::string control_file,std::string& cfile, std::string& ofile);
