@@ -398,7 +398,7 @@ void read_counts( std::string cfile, std::vector<int>& counts ) {
   } else {
     //prints if file not opened
     std::cout << "  Unable to open " << cfile << "."; 
-    
+    exit(0);
   }
 }
 
