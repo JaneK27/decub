@@ -95,7 +95,7 @@ Please use `Issues` to report possible bugs, suggest enhancement features, or if
 
 
 ## Citation
-_The patterns of codon usage between chordates and arthropods are different but co-evolving with mutational biases._ Kotari, Kosiol, and Borges (In preparation)
+_The patterns of codon usage between chordates and arthropods are different but co-evolving with mutational biases._ I. Kotari, C. Kosiol, and R. Borges.  bioRxiv DOI: https://doi.org/10.1101/2023.03.30.534958
 
 ## License
 This program is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software. See the GNU General Public License (http://www.gnu.org/licenses/) for more details.
